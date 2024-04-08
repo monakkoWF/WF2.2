@@ -33,8 +33,7 @@ const getServicePercentPrices = function() {
 return fullPrice - (fullPrice * (precentage / 100))
 }
 const getTitle = function() {
-    return titleProject.charAt(0).toUpper() + titleProject.slice(1)
-    // return titleProject(0).toUpperCase() + titleProject.slice(1).toLocaleLowerCase()
+    return titleProject[0].toUpperCase() + titleProject.slice(1).toLocaleLowerCase()
 }
 
 
@@ -70,4 +69,4 @@ console.log('Название второго сервиса — ' + service2);
 console.log('Стоимость второго сервиса — ' + servicePrice2);
 console.log('Полная стоимость — ' + fullPrice);
 console.log('Процент – ' + servicePercentPrices);
-// console.log(Math.round('Процент –' + servicePercentPrices));
+console.log(Math.ceil('Процент –' + servicePercentPrices));
