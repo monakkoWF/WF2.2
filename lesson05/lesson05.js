@@ -15,7 +15,7 @@ titleProject = prompt('Название проекта?')
 screensValue = prompt('шаблонные, с уникальным дизайном, с анимацией?')
 responsive = prompt('нужен ли респонсивный сайт?')
 }
-
+asking()
 
 let service = prompt('Какой сервис нужен?')
 let servicePrice = +prompt('Сколько это будет стоить?')
@@ -39,10 +39,10 @@ const getTitle = function() {
 
 
 
-asking()
+
 allServicePrices = getAllServicePrices()
 fullPrice = getFullPrice();
-servicePercentPrices = getAllServicePrices();
+servicePercentPrices = getServicePercentPrices();
 newTitle = getTitle();
 
 
@@ -60,7 +60,7 @@ if (fullPrice > 50000) {
 
 
 
-console.log('Название проекта — ' + titleProject);
+console.log('Название проекта — ' + newTitle);
 console.log('screenValue – ' + screensValue);
 console.log('Нужен ли респонсивный сайт? — ' + responsive);
 console.log('Название первого сервиса — ' + service);
@@ -68,5 +68,4 @@ console.log('Стоимость первого сервиса — ' + servicePri
 console.log('Название второго сервиса — ' + service2);
 console.log('Стоимость второго сервиса — ' + servicePrice2);
 console.log('Полная стоимость — ' + fullPrice);
-console.log('Процент – ' + servicePercentPrices);
-console.log(Math.ceil('Процент –' + servicePercentPrices));
+console.log('Процент – ' + Math.ceil(servicePercentPrices));
