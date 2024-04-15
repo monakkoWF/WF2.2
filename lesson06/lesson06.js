@@ -73,7 +73,7 @@ const getTitle = function() {
 const getPercentageMessage = function(price) {
 
 if (price > 50000) {
-    return 'Скидка 10%'
+    return 'Скидка 10% '
 } else if (price > 20000 && price < 50000) {
     return 'Скидка 5%'
 } else if (price < 20000 && price > 0) {
