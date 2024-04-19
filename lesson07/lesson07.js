@@ -34,9 +34,9 @@ const gameBotFunction = function () {
 
         if (answerNum > mysteryNumber) {
             
-            alert('Неверно, осталось попыток: ' + tries)
+            alert('Заданное число меньше, осталось попыток: ' + tries)
         } else if (answerNum < mysteryNumber) {
-            alert('Неверно, осталось попыток: '+ tries)
+            alert('Заданное число больше, осталось попыток: '+ tries)
         } else if (answerNum === mysteryNumber) {
           const winner = confirm('Победа! Хотите сыграть еще раз?')
 
@@ -56,7 +56,7 @@ const gameBotFunction = function () {
             asking();
         } else {
             const rePlay = confirm('Попыток больше нет, игра окончена. Хотите начать заново?')
-            if (rePlay = true) {
+            if (rePlay === true) {
                 tries = 2
                 asking();
             } else {
